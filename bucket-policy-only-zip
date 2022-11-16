@@ -1,0 +1,20 @@
+{
+	"Version": "2012-10-17",
+	"Id": "Policy1668565390806",
+	"Statement": [
+		{
+			"Sid": "Stmt1668565388924",
+			"Effect": "Allow",
+			"Principal": "*",
+			"Action": "s3:PutObject",
+			"Resource": "arn:aws:s3:::formatconvtest2gmailcom-formatconv/*.zip"
+		},
+		{
+			"Sid": "Stmt1668566269601",
+			"Effect": "Deny",
+			"Principal": "*",
+			"Action": "s3:PutObject",
+			"NotResource": "arn:aws:s3:::formatconvtest2gmailcom-formatconv/*.zip"
+		}
+	]
+}
